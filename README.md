@@ -37,7 +37,7 @@ debate_dag/
 ├── requirements.txt
 
 
-## Setup Instructions
+Setup Instructions
 
 ### Prerequisites
 - Python 3.10 or higher
