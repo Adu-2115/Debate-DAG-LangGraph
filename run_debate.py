@@ -10,9 +10,8 @@ from nodes.judge_node import judge_node
 from nodes.coordinator_router import coordinator_router
 
 
-# -------------------------
 # Build LangGraph DAG
-# -------------------------
+
 def build_graph():
     graph = StateGraph(DebateState)
 
@@ -56,9 +55,8 @@ def build_graph():
     return graph.compile()
 
 
-# -------------------------
 # Run Debate
-# -------------------------
+
 if __name__ == "__main__":
     app = build_graph()
 
