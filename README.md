@@ -37,7 +37,7 @@ debate_dag/
 ├── requirements.txt
 
 
-Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -50,3 +50,20 @@ Setup Instructions
 ```bash
 git clone https://github.com/Adu-2115/Debate-DAG-LangGraph.git
 cd Debate-DAG-LangGraph
+
+### 2. Install Ollama
+
+Download and install Ollama from the official website:  
+https://ollama.com/
+
+After installation, pull the required model:
+
+```bash
+ollama pull llama3
+ollama serve
+
+### 3. Install Python Dependencies
+pip install -r requirements.txt
+
+### 4. Run the Debate
+python run_debate.py
