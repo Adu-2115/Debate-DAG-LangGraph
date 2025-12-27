@@ -36,7 +36,7 @@ debate_dag/
 ├── pytest.ini
 ├── requirements.txt
 
-
+```text
 ## Setup Instructions
 
 ### Prerequisites
