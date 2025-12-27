@@ -36,7 +36,8 @@ debate_dag/
 ├── pytest.ini
 ├── requirements.txt
 
-Setup Instructions
+
+## Setup Instructions
 
 Prerequisites:
 - Python 3.10+
