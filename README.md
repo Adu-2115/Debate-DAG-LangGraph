@@ -36,34 +36,42 @@ debate_dag/
 ├── pytest.ini
 ├── requirements.txt
 
-```text
-## Setup Instructions
 
-### Prerequisites
-- Python 3.10 or higher
-- Ollama (for local LLM inference)
+Setup Instructions
+Prerequisites
 
----
+Python 3.10 or higher
 
-### 1. Clone the Repository
+Ollama (for local LLM inference)
 
-```bash
+Git
+
+1. Clone the Repository
 git clone https://github.com/Adu-2115/Debate-DAG-LangGraph.git
 cd Debate-DAG-LangGraph
 
-### 2. Install Ollama
+2. Install Ollama
 
-Download and install Ollama from the official website:  
+Download and install Ollama from the official website:
 https://ollama.com/
 
-After installation, pull the required model:
+Pull the required model:
 
-```bash
 ollama pull llama3
+
+
+Start the Ollama server:
+
 ollama serve
 
-### 3. Install Python Dependencies
+
+Keep the Ollama server running in the background.
+
+3. Install Python Dependencies
 pip install -r requirements.txt
 
-### 4. Run the Debate
+4. Run the Debate
 python run_debate.py
+
+
+You will be prompted to enter a debate topic via the CLI.
