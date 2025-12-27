@@ -1,0 +1,25 @@
+digraph DebateDAG {
+    rankdir=TB;
+    node [shape=box, style=rounded];
+
+    UserInput [label="User Input Node"];
+    Coordinator [label="Coordinator Router"];
+    AgentA [label="Agent A"];
+    AgentB [label="Agent B"];
+    Memory [label="Memory Node"];
+    Judge [label="Judge Node"];
+    END [label="END", shape=oval];
+
+    UserInput -> Coordinator;
+
+    Coordinator -> AgentA [label="Turn: Agent A"];
+    Coordinator -> AgentB [label="Turn: Agent B"];
+
+    AgentA -> Memory;
+    AgentB -> Memory;
+
+    Memory -> Coordinator;
+
+    Coordinator -> Judge [label="After N Rounds"];
+    Judge -> END;
+}
