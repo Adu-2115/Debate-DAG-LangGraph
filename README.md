@@ -32,6 +32,7 @@ debate_dag/
 ├── llm_client.py
 ├── nodes/
 ├── personas/
+├── assets/
 ├── tests/
 ├── pytest.ini
 ├── requirements.txt
